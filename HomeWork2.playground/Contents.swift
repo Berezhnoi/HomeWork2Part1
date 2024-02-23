@@ -34,15 +34,15 @@ print("Розділ 1.1 Константи\n")
 
 // Declaring constants
 let petName: String = "Fluffy"
-let weight: Double = 5.7
-let age: Int = 3
-let isHungry: Bool = true
+let petWeight: Double = 5.7
+let petAge: Int = 3
+let isPetHungry: Bool = true
 
 // Printing the results to the console
 print("Ім'я хатньої тварини: \(petName)")
-print("Вага хатньої тварини: \(weight)кг")
-print("Вік хатньої тварини: \(age) років")
-print("Хатня тварина голодна: \(isHungry)")
+print("Вага хатньої тварини: \(petWeight)кг")
+print("Вік хатньої тварини: \(petAge) років")
+print("Хатня тварина голодна: \(isPetHungry)")
 
 
 print("\nРозділ 1.2 Змінні\n")
@@ -89,21 +89,35 @@ print("\nРозділ 1.2 Змінні\n")
 
  */
 
-print("Інформація за 2018 р.:")
-print("Ім'я: ")
-print("Прізвище: ")
-print("Вік: ")
-print("зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+// Declaring variables to store user information
+var personName: String = "John"
+var personLastName: String = "Doe"
+var personAge: Int = 30
+var personHeight: Double = 175.5 // Height in centimeters
+var personWeight: Double = 70.2 // Weight in kilograms
+var isPersonMarried: Bool = true
 
+func printPersonInfo() {
+    print("Ім'я: \(personName)")
+    print("Прізвище: \(personLastName)")
+    print("Вік: \(personAge)")
+    print("зріст: \(personHeight)см")
+    print("Вага: \(personWeight)кг")
+    print("У шлюбі: \(isPersonMarried)")
+}
+
+// Printing information for 2018
+print("Інформація за 2018 р.:")
+printPersonInfo()
+
+// Updating variables for current year
+isPersonMarried = false
+personWeight = 72.5
+personAge = 32
+
+// Printing information for the current year
 print("\nІнформація за поточний рік:")
-print("Ім'я: ")
-print("Прізвище: ")
-print("Вік: ")
-print("зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+printPersonInfo()
 
 
 print("\nРозділ 1.3 Псевдоніми\n")
