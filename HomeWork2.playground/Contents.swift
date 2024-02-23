@@ -159,15 +159,30 @@ print("\nРозділ 1.3 Псевдоніми\n")
 
  */
 
+typealias Pressure = Int // Pressure in hPa
+typealias Humidity = Int // Humidity in percentage
+typealias Celsius = Double // Temperature in Celsius
+
+var pressureYesterday: Pressure = 1020
+var humidityYesterday: Humidity = 50
+var temperatureYesterday: Celsius = 18.0
+
+func printWeatherDetails() {
+    print("Тиск: \(pressureYesterday) hPa")
+    print("Вологість: \(humidityYesterday)%")
+    print("Температура: \(temperatureYesterday)°C")
+}
+
 print("Погода вчора:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+printWeatherDetails()
+
+// Assigning new values for today
+pressureYesterday = 1015
+humidityYesterday = 55
+temperatureYesterday = 20.5
 
 print("\nПогода сьогодні:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+printWeatherDetails()
 
 
 print("\nРозділ 1.4 Кортежі\n")
