@@ -254,6 +254,11 @@ print("\nРозділ 1.5 Опціонали\n")
 
  */
 
-print("Користувач авторизован: ")
+// Declare userLoggedIn as an optional Boolean variable
+var userLoggedIn: Bool?
 
-print("Користувач авторизован: ")
+print("Користувач авторизован: \(userLoggedIn)")
+
+userLoggedIn = true
+
+print("Користувач авторизован: \(userLoggedIn)")
